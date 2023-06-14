@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "Registration Form.css">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <title> Registration Form </title>
+    </head>
+    <body>
+        <div class = "nav-bar">
+            <h1> REGISTRATION FORM </h1>
+        </div>
+        <div class = "registration-form row">
+            <div class = "student-enrollment col-md">
+                <div class = "heading">
+                    <h2> Student Enrollment </h2>
+                </div>
+                <form action = "" id = "userForm" class = "main-form form-check needs-validation" novalidate>
+                    <div class = "form-group row">
+                        <label for = "name" class = "col-sm-2 col-form-label"> <b> Name </b> </label>
+                        <div class = "col-sm-10">
+                            <input type = "text" class = "form-control" id = "name" required />
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "email" class = "col-sm-2 col-form-label"> <b> Email </b> </label>
+                        <div class = "col-sm-10">
+                            <input type = "email" class = "form-control" id = "email" required />
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "website" class = "col-sm-2 col-form-label"> <b> Website </b> </label>
+                        <div class = "col-sm-10">
+                            <input type = "url" class = "form-control" id = "website" required />
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "image" class = "col-sm-2 col-form-label"> <b> Image Link </b> </label>
+                        <div class = "col-sm-10">
+                            <input type = "url" class = "form-control" id = "image" required />
+                        </div>
+                    </div>
+                    <fieldset class = "form-group row">
+                        <legend class = "col-form-label col-sm-2 float-sm-left pt-0"> <b> Gender </b> </legend>
+                        <div class = "col-sm-10">
+                            <div class = "form-check ">
+                                <input class = "form-check-input" type = "radio" name = "gender" id = "male" value = "Male" required />
+                                <label class = "form-check-label" for = "male"> Male </label>
+                            </div>
+                            <div class = "form-check">
+                                <input class = "form-check-input" type = "radio" name = "gender" id = "female" value = "Female" />
+                                <label class = "form-check-label" for = "female"> Female </label>
+                                &nbsp;
+                                <div class="invalid-feedback">
+                                    * (Please select the Gender.)
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class = "form-group row">
+                        <legend class = "col-form-label col-sm-2 float-sm-left pt-0"> <b> Skills </b> </legend>
+                        <div class = "col-sm-10">
+                            <div class = "form-check form-check-inline">
+                                <input class = "form-check-input" type = "checkbox" name = "skill" id = "java" value = "Java" />
+                                <label class = "form-check-label" for = "java"> Java </label>
+                                &nbsp;
+                                <div class="invalid-feedback">
+                                    * (Please check the Skills.)
+                                </div>
+                            </div>
+                            <div class = "form-check form-check-inline">
+                                <input class = "form-check-input" type = "checkbox" name = "skill" id = "html" value = "HTML" />
+                                <label class = "form-check-label" for = "html"> HTML </label>
+                                &nbsp;
+                                <div class="invalid-feedback">
+                                    * (Please check the Skills.)
+                                </div>
+                            </div>
+                            <div class = "form-check form-check-inline">
+                                <input class = "form-check-input" type = "checkbox" name = "skill" id = "css" value = "CSS" />
+                                <label class = "form-check-label" for = "css"> CSS </label>
+                                &nbsp;
+                                <div class="invalid-feedback">
+                                    * (Please check the Skills.)
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type = "submit" class = "btn btn-primary"> Enroll Student </button> &nbsp; &nbsp; &nbsp;
+                    <button type = "reset" class = "btn btn-danger"> Cancel </button>
+                </form>
+            </div>
+            <hr class = "seperation-border" />
+            <div id = "enrolled-student" class = "col-md col-12">
+                <div class = "heading">
+                    <h2> Enrolled Student </h2>
+                </div>
+                <span id = "span"> <b> * Fill the Student Enrollment form. </b> </span>
+            </div>
+        </div>
+        <script defer src = "Registration Form.js"> </script>
+    </body>
+</html>
